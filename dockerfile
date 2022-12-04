@@ -1,4 +1,5 @@
 FROM openjdk:8-jdk-alpine
 MAINTAINER Houssem
-copy sis-2.7.6.jar docker-sis-2.7.6.jar
-ENTRYPOINT ["java","-jar","/docker-sis-2.7.6.jar"]
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} docker-app.jar
+ENTRYPOINT ["java","-jar","/docker-app.jar"]

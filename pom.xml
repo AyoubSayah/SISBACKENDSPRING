@@ -13,7 +13,7 @@
 	<name>sis</name>
 	<description>Micro service for authentication with Keycloak and serving Rest full api&apos;s to the Back-Office</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 		<keycloak.version>19.0.3</keycloak.version>
 	</properties>
 	<dependencies>
